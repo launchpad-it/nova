@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "claude /plugin marketplace update nova 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
